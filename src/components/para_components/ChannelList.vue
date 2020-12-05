@@ -1,3 +1,4 @@
+<!--频道列表组件-->
 <template>
   <div>
     <div class="channel_list" :style="{height:`${height}px`}">

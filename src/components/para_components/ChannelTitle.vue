@@ -1,3 +1,4 @@
+<!--频道标题组件-->
 <template>
   <div class="p_channel">
     <BChannelTitle :isActive="isActive" @active="$emit('active',100)">

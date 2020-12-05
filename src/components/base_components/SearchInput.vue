@@ -1,4 +1,6 @@
+<!--搜索框-->
 <template>
+<!--监听form表单的点击事件并阻止其默认的事件-->
   <form class="search_form" @submit.prevent="handClick">
     <input style="text" v-model="plackHolderValue" :placeholder="placeHolder"  />
     <div class="icon" @click="handClick()">

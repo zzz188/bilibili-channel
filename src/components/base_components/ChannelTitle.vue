@@ -1,6 +1,7 @@
 <!--Channel每个项目主体的基本样式-->
 <template>
   <div class="channel">
+  <!--向父组件传递active事件-->
     <ChannelBackground :isActive="isActive" @active="$emit('active')">
       <div class="bchannel">
         <span class="channel_title">

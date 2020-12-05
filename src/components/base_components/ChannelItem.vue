@@ -1,16 +1,19 @@
 <!--Channel每个项目主体的基本样式-->
 <template>
   <div class="channel_list">
-    <ChannelBackground>
-      <div class="inner">
-        <span class="name">
-          <slot name="name">{{ items.name }}</slot>
-        </span>
-        <span class="count">
-          <slot name="count">{{ items.channel_count }}</slot>
-        </span>
-      </div>
-    </ChannelBackground>
+  <!--向路由传递name和count的值-->
+    <router-link :to="{ name: 'info1', params: { name: items.name ,count:items.channel_count} }">
+      <ChannelBackground>
+        <div class="inner">
+          <span class="name">
+            <slot name="name">{{ items.name }}</slot>
+          </span>
+          <span class="count">
+            <slot name="count">{{ items.channel_count }}</slot>
+          </span>
+        </div>
+      </ChannelBackground>
+    </router-link>
   </div>
 </template>
 
@@ -30,6 +33,10 @@ export default {
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+  color: #222222;
+}
 .name {
   font-size: 14px;
   padding-right: 6px;

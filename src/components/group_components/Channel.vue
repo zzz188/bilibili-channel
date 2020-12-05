@@ -1,3 +1,4 @@
+<!--频道组合组件-->
 <template>
   <div style="width: 261px">
     <div class="search_input">

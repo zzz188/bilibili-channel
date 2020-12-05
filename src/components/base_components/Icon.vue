@@ -1,3 +1,4 @@
+<!--图标封装-->
 <template>
   <i class="iconfont" :class="[iconClass, extraClass]"></i>
 </template>

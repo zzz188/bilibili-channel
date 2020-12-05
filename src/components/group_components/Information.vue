@@ -1,6 +1,8 @@
 <template>
     <div class="information">
-        <p>asdlkfasjdf</p>
+    <!--获取路由传递过来的数据-->
+        <p>{{$route.params.name}}</p>
+        <p>{{$route.params.count}}</p>
     </div>
 </template>
 <script>
