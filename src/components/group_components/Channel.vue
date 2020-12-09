@@ -16,8 +16,6 @@
       :activeId="activeId"
       @active="activeId = $event"
     ></PChannelList>
-    <router-link to="info1">info1</router-link>
-    <router-link to="info2">info2</router-link>
   </div>
 </template>
 
